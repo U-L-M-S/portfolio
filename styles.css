@@ -30,7 +30,7 @@ body a{
 }
 .right-section{
     grid-column: span 5;
-    background-color: #E1D9D1;
+    background-color: #D6D6D4;
     height: 100%;
 }
 
@@ -119,6 +119,7 @@ body a{
     background-color: #2D9CDB;
     border-radius: 12px;
 }
+/*Progress skills*/
 .l-progress{
     width: 90%;
 }
@@ -156,6 +157,19 @@ body a{
     width: 50%;
 }
 
+/*Progress Languages*/
+.por-progress{
+    width: 90%;
+}
+.ger-progress{
+    width: 90%;
+}
+.en-progress{
+    width: 70%;
+}
+.sp-progress{
+    width: 50%;
+}
 
 .skill-title{
     text-transform: uppercase;
