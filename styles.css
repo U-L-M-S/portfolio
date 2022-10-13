@@ -6,6 +6,13 @@
     font-family: 'Nunito', sans-serif;
 }
 
+/*
+Smooth scrolling for anchor links
+I could make it in JS but... it is just a line in CSS
+https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+*/
+html{scroll-behavior:smooth} 
+
 body{
     background-color: #94D9EA;
 }
@@ -34,6 +41,43 @@ body a{
     height: 100%;
 }
 
+#navbar {
+    position: fixed;
+    overflow: visible;
+    top: 30%;
+    right: 0;
+  }
+  
+#navbar li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 185px;
+    background-color: #002333;
+    border: 1px solid #555;
+}
+
+#navbar li a {
+    
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+
+#navbar a:hover {
+    background-color: #04AA6D;
+}
+  
 
 .left-content{
     padding: 2rem 3rem;
@@ -189,11 +233,11 @@ body a{
     padding: .4rem 0;
 }
 
-.references-section li{
+.languages li{
     color: #ccc;
     padding: .2rem 0;
 }
-.references-section li i{
+.languages li i{
     padding-right: .5rem;
     font-size: 1.2rem;
     color: #2D9CDB;
