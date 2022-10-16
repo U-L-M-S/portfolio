@@ -45,7 +45,7 @@ body a{
     position: fixed;
     overflow: visible;
     top: 30%;
-    right: 0;
+    right: 0%;
   }
   
 #navbar li a {
@@ -203,7 +203,7 @@ body a{
 
 /*Progress Languages*/
 .por-progress{
-    width: 90%;
+    width: 100%;
 }
 .ger-progress{
     width: 90%;
@@ -253,12 +253,11 @@ body a{
     text-transform: uppercase;
     color: #2F80ED;
     margin-bottom: 1.2rem;
-    position: relative;
 }
 
 .right-title::after{
     content: "";
-    position: absolute;
+    position: relative;
     width: 60%;
     height: .2rem;
     background-color: #ccc;
@@ -296,10 +295,10 @@ body a{
     text-transform: uppercase;
 }
 
+
 .tl-content{
     border-left: 1px solid #ccc;
     padding-left: 2rem;
-    position: relative;
     padding-bottom: 2rem;
 }
 
@@ -312,6 +311,89 @@ body a{
     border-radius: 50%;
     transform: translateX(-50%);
     left: 0;
+}
+
+ul#pictures{
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+    list-style: none;
+    background-color: #D6D6D4;
+}
+
+ul#pictures li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #eee9e9;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+ul#pictures li#picture1{
+    background: url('pictures/useCase.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 689px 593px;
+    background-color: #D6D6D4;
+}
+ul#pictures li#picture1:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#pictures li#picture2{
+    background: url('pictures/TAM.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 720px 623px;
+    background-color: #D6D6D4;
+}
+ul#pictures li#picture2:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#pictures li#picture3{
+    background: url('pictures/classDiagram.png') no-repeat;    
+    background-position: 50% 50%;
+    background-size: 611px 599px;
+    background-color: #fff;
+}
+ul#pictures li#picture3:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#pictures li#picture4{
+    background: url('pictures/design.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 558px 967px;
+    background-color: #fff;
+}
+ul#pictures li#picture4:hover{
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#pictures li span{
+    /* Make legends invisible*/
+    opacity: 0;
+    color: #f7f7f7;
+    text-shadow: 1px 1px 1px #000;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 9pt;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#pictures li:hover{
+    -webkit-transform: scale(1.5);
+}
+
+ul#pictures li:hover span{
+    /* Make the legends visible again (HOVER)*/
+    opacity: 1;
 }
 
 /*Media Querries*/
@@ -356,3 +438,4 @@ body a{
         font-size: 1.5rem;
     }
 }
+
