@@ -2,7 +2,7 @@ version: "3.9" # Specify the Docker Compose version
 
 services:
   portfolio:
-    image: nginx:alpine # Use a lightweight Nginx image
+    image: nginx:latest # Use a lightweight Nginx image
     container_name: my_portfolio
     ports:
       - "80:80" # Map port 80 of the container to port 80 of your server
