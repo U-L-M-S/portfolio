@@ -3,8 +3,9 @@ version: "3.9" # Specify the Docker Compose version
 services:
   portfolio:
     image: nginx:alpine # Use a lightweight Nginx image
+    container_name: my_portfolio
     ports:
       - "7777:80" # Map port 80 of the container to port 80 of your server
     volumes:
-      - ./portfolio:/var/www/html # Mount your local project directory to the web root inside the container
+      - ./:/var/www/html # Mount your local project directory to the web root inside the container
     restart: unless-stopped # Restart the container automatically on failures
