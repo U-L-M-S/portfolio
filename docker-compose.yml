@@ -10,5 +10,4 @@ services:
       - ./website:/usr/share/nginx/html/ # Mount your website directory
 
 volumes:
-  website: # Define the volume name
-
+  website:
