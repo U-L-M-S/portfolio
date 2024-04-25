@@ -32,7 +32,7 @@
       type="image/icon type"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="button-move.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap"
@@ -58,13 +58,13 @@
         <nav class="navbar">
           <a href="#home" class="active">Startseite</a>
           <a href="#education">Bildung</a>
-          <a href="#about">Über Mich</a>
+          <a href="#projects">Projekten</a>
           <a href="#contact">Kontakt</a>
         </nav>
     </header>
     <section class="home" id="home">
       <div class="home-content">
-        <h1>HI, <span>Levi</span> hier</h1>
+        <h1>Hallo Welt, ich bin <span>Levi</span></h1>
         <h3 class="text-animation">><span></span> </h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci laborum magnam ratione, unde veritatis temporibus reprehenderit dolores dolorum quis, quasi voluptatem necessitatibus consectetur distinctio dolorem quae velit, odio vel non!</p>
 
@@ -140,28 +140,28 @@
         <div class="project-box">
           <div class="project-info">
             <h4>Projekt1</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut autem ipsam nam earum quidem ex, facere doloremque enim officiis quo adipisci, totam sunt amet quisquam est quibusdam tempora magnam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
 
         <div class="project-box">
           <div class="project-info">
             <h4>Projekt2</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut autem ipsam nam earum quidem ex, facere doloremque enim officiis quo adipisci, totam sunt amet quisquam est quibusdam tempora magnam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
 
         <div class="project-box">
           <div class="project-info">
             <h4>Projekt3</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut autem ipsam nam earum quidem ex, facere doloremque enim officiis quo adipisci, totam sunt amet quisquam est quibusdam tempora magnam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
 
         <div class="project-box">
           <div class="project-info">
             <h4>Projekt4</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut autem ipsam nam earum quidem ex, facere doloremque enim officiis quo adipisci, totam sunt amet quisquam est quibusdam tempora magnam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
       </div>
@@ -172,17 +172,20 @@
       <h2 class="heading">Kontaktieren Sie <span>mich</span></h2>
 
       <form action="">
+        <div class="input-group">
         <div class="input-box">
-          <input type="text" name="" id=""    placeholder="Full Name">
-          <input type="email" name="" id="" placeholder="E-Mail">
+          <input type="text" name="" id=""    placeholder="Vorname">
+          <input type="text" name="" id=""  placeholder="Nachname">
+          <input type="email" name="" id="" placeholder="E-Mail" required>
         </div>
         <div class="input-box">
-          <input type="tel" name="" id="" placeholder="Phone Number">
-          <input type="text" name="" id="" placeholder="Subject">
+          <input type="tel" name="" id="" placeholder="Telefonnummer">
         </div>
-
+      </div>
         <div class="input-group-2">
-          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <input type="text" name="" id="" placeholder="Subject">
+
+          <textarea name="" id="" cols="30" rows="5"></textarea>
           <input type="submit" value="Send Message" class="btn">
         </div>
       </form>
@@ -190,7 +193,7 @@
     </section>
 
     <footer class="footer">
-      <div class="social"></div>
+      <p class="copyright">© Uinclis Levi Martins Seebacher | All rights Reserved</p>
     </footer>
 
     <script src="script.js"></script>
