@@ -7,7 +7,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./website:/usr/share/nginx/html/ # Mount your website directory
+      - ./website:/usr/share/nginx/html/
 
 volumes:
   website:
