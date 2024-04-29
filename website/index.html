@@ -170,19 +170,18 @@
     <section class="contact" id="contact">
       <h2 class="heading">Kontaktieren Sie <span>mich</span></h2>
 
-      <form method="post" action="send-email.php">
+      <form method="POST" action="https://formsubmit.co/uinclis@outlook.de">
         <div class="input-group">
         <div class="input-box">
-          <input type="text" name="fname" id="fname"    placeholder="Vorname" required>
-          <input type="text" name="lname" id="lname"  placeholder="Nachname" required>
-          <input type="email" name="email" id="email" placeholder="E-Mail" required>
+          <input type="text" name="name" id="name"  placeholder="Name" required>
+          <input type="email" name="email" id="email" placeholder="Ihre E-Mail" required>
         </div>
         <div class="input-box">
           <input type="tel" name="tel" id="tel" placeholder="Telefonnummer">
         </div>
       </div>
         <div class="input-group-2">
-          <input type="text" name="sub" id="sub" placeholder="Subject" required>
+          <input type="text" name="subject" id="subject" placeholder="Subject" required>
 
           <textarea name="msg" id="msg" cols="30" rows="5" required></textarea>
           <input type="submit" value="Send Message" class="btn">
