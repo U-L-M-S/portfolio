@@ -8,6 +8,7 @@ services:
       - "80:80"
     volumes:
       - /home/user1/Docker/portfolio/website:/usr/share/nginx/html/
+    restart: always
 
 volumes:
   website:
