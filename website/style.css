@@ -39,7 +39,6 @@ body{
     font-size: 3rem;
     color: var(--text-color);
     font-weight: 800;
-    cursor: pointer;
     transition: 0.3s ease;
 }
 .logo:hover{
@@ -366,7 +365,6 @@ span{
     height: 300px;
     border-radius: 3rem;
     border: 5px solid transparent;
-    cursor: pointer;
     transition: 0.4s ease-in-out;
 }
 .project-box:hover{
