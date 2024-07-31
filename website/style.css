@@ -208,11 +208,11 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "Anwendungsentwickler";
+        content: "Anwendungsentwicklung";
     }
     21%,
     40%{
-        content: "IT-Sicherheits";
+        content: "IT-Sicherheit";
     }
     41%,
     60%{
