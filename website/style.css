@@ -440,55 +440,58 @@ span{
     margin-top: 50px;
     text-align: center;
 }
-@media(max-width:1285px){
-    html{
+/* Default styles (for screens wider than 1285px) */
+@media (max-width: 1285px) {
+    html {
         font-size: 55%;
     }
-    .projects-container{
+    .projects-container {
         padding-bottom: 7rem;
         grid-template-columns: repeat(2, 1fr);
         margin: 0 5rem;
     }
 }
-@media(max-width:991ppx){
-    header{
+
+@media (max-width: 991px) {
+    header {
         padding: 2rem 3%;
     }
-    section{
+    section {
         padding: 10rem 3% 2rem;
     }
-    .timeline-items::before{
+    .timeline-items::before {
         left: 7px;
     }
-    .timeline-item:nth-child(odd){
+    .timeline-item:nth-child(odd) {
         padding-right: 0;
         text-align: left;
     }
     .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even){
+    .timeline-item:nth-child(even) {
         padding-left: 37px;
     }
-    .timeline-dot{
+    .timeline-dot {
         left: 0;
     }
-    .projects{
+    .projects {
         padding-bottom: 7rem;
     }
-    .testimonials .wrapper{
-        grid-template-columns: repeat(1,1fr);
+    .testimonials .wrapper {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .contact form{
+    .contact form {
         flex-direction: column;
     }
-    .footer{
+    .footer {
         padding: 2rem 3%;
     }
 }
-@media(max-width:895px){
-    #menu-icon{
+
+@media (max-width: 895px) {
+    #menu-icon {
         display: block;
     }
-    .navbar{
+    .navbar {
         position: absolute;
         top: 100%;
         right: 0;
@@ -501,37 +504,81 @@ span{
         border-bottom: 2px solid var(--main-color);
         display: none;
     }
-    .navbar.active{
+    .navbar.active {
         display: block;
     }
-    .navbar a{
+    .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
         color: white;
     }
-    .home{
+    .home {
         flex-direction: column-reverse;
         margin: 5rem 4rem;
     }
-    .home-content h3{
+    .home-content h3 {
         font-size: 2.6rem;
     }
-    .home-content h1{
+    .home-content h1 {
         font-size: 8rem;
         margin-top: 3rem;
     }
-    .home-content p{
+    .home-content p {
         max-width: 600px;
         margin: 0 auto;
     }
-    .home-img img{
+    .home-img img {
         width: 56vw;
     }
-    .projects h2{
+    .projects h2 {
         margin-bottom: 3rem;
     }
-    .services-container{
-        grid-template-columns: repeat(1,1fr);
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .projects {
+        padding: 2rem; /* Added padding for spacing around the section */
+    }
+
+    .projects h2 {
+        margin-bottom: 3rem; /* Reduced margin for better spacing */
+        text-align: center; /* Center align the heading */
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+        gap: 2rem; /* Adjusted gap for spacing between items */
+        padding: 0 1rem; /* Added horizontal padding */
+    }
+
+    .project-box {
+        border-radius: 1.5rem; /* Reduced border radius for a more subtle effect */
+        transition: 0.3s ease-in-out; /* Slightly adjusted transition duration */
+        overflow: hidden; /* Ensures content doesn't overflow */
+    }
+
+    .project-box:hover {
+        transform: scale(1.05); /* Increased scale effect */
+    }
+
+    .project-info {
+        padding: 1rem; /* Adjusted padding for better spacing */
+        max-height: 100%; /* Allows the content to use full available height */
+        justify-content: center; /* Center align content vertically */
+    }
+
+    .project-info h4 {
+        font-size: 2rem; /* Reduced font size for better scaling */
+        font-weight: 700; /* Adjusted font weight */
+        line-height: 1.5; /* Adjusted line height */
+        margin-bottom: 1rem; /* Added margin below the heading */
+    }
+
+    .project-info p {
+        display: none; /* Hide paragraph text */
     }
 }
