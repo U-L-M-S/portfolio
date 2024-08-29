@@ -521,7 +521,9 @@ span{
         font-size: 2.6rem;
     }
     .home-content h1 {
-        font-size: 8rem;
+        font-size: 7rem;
+        white-space: nowrap; /* Prevent text from wrapping */
+        display: inline-block; /* Keep the h1 content in one line */
         margin-top: 3rem;
     }
     .home-content p {
