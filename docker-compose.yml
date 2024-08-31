@@ -1,11 +1,23 @@
-# Use the official Nginx image as the base image
-FROM nginx:latest
+version: "3"
 
-# Copy the contents of your website directory into the Nginx HTML directory
-COPY website /usr/share/nginx/html/
+services:
+  portfolio:
+    image: nginx:latest
+    container_name: my_portfolio
+    ports:
+      - 3001
+    restart: always
+    networks:
+      - dokploy-network
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.portfolio.rule=Host(`uinclis.de`)
+      - traefik.http.routers.portfolio.entrypoints=websecure
+      - traefik.http.routers.portfolio.tls.certResolver=letsencrypt
+      - traefik.http.services.portfolio.loadbalancer.server.port=3001
 
-# Expose port 80
-EXPOSE 80
-
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Define a network, which allows containers to communicate
+# with each other, by using their container name as a hostname
+networks:
+  dokploy-network:
+    external: true
