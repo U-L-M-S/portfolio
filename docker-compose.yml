@@ -3,7 +3,7 @@ services:
     image: nginx:latest
     container_name: my_portfolio
     ports:
-      - "80:80"
+      - "443:80"
     volumes:
       - ./website:/usr/share/nginx/html
     restart: always
