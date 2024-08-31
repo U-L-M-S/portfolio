@@ -1,14 +1,11 @@
-version: "3.9"
+# Use the official Nginx image as the base image
+FROM nginx:latest
 
-services:
-  portfolio:
-    image: nginx:latest
-    container_name: my_portfolio
-    ports:
-      - "80:80"
-    volumes:
-      - /home/user1/Docker/portfolio/website:/usr/share/nginx/html/
-    restart: always
+# Copy the contents of your website directory into the Nginx HTML directory
+COPY . /usr/share/nginx/html/
 
-volumes:
-  website:
+# Expose port 80
+EXPOSE 80
+
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]
