@@ -4,7 +4,6 @@ services:
     container_name: my_portfolio
     ports:
       - "3000:80"
-      - "3001:443"
     volumes:
       - ./website:/usr/share/nginx/html
     restart: always
