@@ -1,23 +1,11 @@
-version: "3"
-
 services:
   portfolio:
     image: nginx:latest
     container_name: my_portfolio
     ports:
-      - 3001
+      - "80:80"
+    volumes:
+      - ./website:/usr/share/nginx/html
     restart: always
-    networks:
-      - dokploy-network
-    labels:
-      - traefik.enable=true
-      - traefik.http.routers.portfolio.rule=Host(`uinclis.de`)
-      - traefik.http.routers.portfolio.entrypoints=websecure
-      - traefik.http.routers.portfolio.tls.certResolver=letsencrypt
-      - traefik.http.services.portfolio.loadbalancer.server.port=3001
+# No need to define volumes under the volumes key, as you're directly binding a local folder
 
-# Define a network, which allows containers to communicate
-# with each other, by using their container name as a hostname
-networks:
-  dokploy-network:
-    external: true
