@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y git
 
 # Clone the repository
 RUN git clone https://github.com/U-L-M-S/portfolio /usr/share/nginx/html
+RUN cp -r /usr/share/nginx/html/website/ /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
