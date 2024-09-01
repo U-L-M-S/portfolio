@@ -1,11 +1,7 @@
 services:
   portfolio:
-    image: nginx:latest
+    build: . # This tells Docker Compose to build the image from the Dockerfile in the current directory
     container_name: my_portfolio
     ports:
       - "3000:80"
-    volumes:
-      - ./website:/usr/share/nginx/html
     restart: always
-# No need to define volumes under the volumes key, as you're directly binding a local folder
-
