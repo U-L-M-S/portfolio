@@ -443,6 +443,7 @@ span{
 /* Default styles (for screens wider than 1285px) */
 @media (max-width: 1285px) {
     html {
+        
         font-size: 55%;
     }
     .projects-container {
@@ -540,6 +541,7 @@ span{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
 /* Mobile-specific styles */
 @media (max-width: 768px) {
     .projects {
@@ -547,13 +549,13 @@ span{
     }
 
     .projects h2 {
-        margin-bottom: 3rem; /* Reduced margin for better spacing */
+        margin-bottom: 2rem; /* Reduced margin for better spacing */
         text-align: center; /* Center align the heading */
     }
 
     .projects-container {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
-        gap: 2rem; /* Adjusted gap for spacing between items */
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        gap: 1.5rem; /* Adjusted gap for spacing between items */
         padding: 0 1rem; /* Added horizontal padding */
     }
 
@@ -561,26 +563,29 @@ span{
         border-radius: 1.5rem; /* Reduced border radius for a more subtle effect */
         transition: 0.3s ease-in-out; /* Slightly adjusted transition duration */
         overflow: hidden; /* Ensures content doesn't overflow */
-    }
-
-    .project-box:hover {
-        transform: scale(1.05); /* Increased scale effect */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto; /* Let the height be determined by content */
+        padding: 2rem; /* Added padding for better spacing */
     }
 
     .project-info {
-        padding: 1rem; /* Adjusted padding for better spacing */
-        max-height: 100%; /* Allows the content to use full available height */
-        justify-content: center; /* Center align content vertically */
+        text-align: center; /* Center align text */
+        max-width: 100%; /* Ensure content fits within the container */
+        overflow-wrap: break-word; /* Handle long words or content */
+        word-wrap: break-word; /* For older browser compatibility */
     }
 
     .project-info h4 {
-        font-size: 2rem; /* Reduced font size for better scaling */
+        font-size: 2.4rem; /* Reduced font size for better scaling */
         font-weight: 700; /* Adjusted font weight */
-        line-height: 1.5; /* Adjusted line height */
+        line-height: 1.4; /* Adjusted line height */
         margin-bottom: 1rem; /* Added margin below the heading */
+        text-align: center; /* Center align the heading */
     }
 
     .project-info p {
-        display: none; /* Hide paragraph text */
+        display: none; /* Hide paragraph text on smaller screens to avoid overflow */
     }
 }
