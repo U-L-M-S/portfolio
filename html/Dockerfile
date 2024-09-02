@@ -2,11 +2,10 @@
 FROM nginx:latest
 
 # Copy website content to the nginx html directory
-COPY website/* /usr/share/nginx/html/
+COPY . /usr/share/nginx/
 
 # Expose port 80
 EXPOSE 80
 
 # Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
-
