@@ -1,10 +1,8 @@
-version: "3.9"
-
 services:
   portfolio:
     build:
       context: . # Context should be the root of the project
-      dockerfile: website/Dockerfile # Pointing to the Dockerfile inside the 'website' directory
+      dockerfile: html/Dockerfile # Pointing to the Dockerfile inside the 'website' directory
     container_name: my_portfolio
     ports:
       - "80:80"
