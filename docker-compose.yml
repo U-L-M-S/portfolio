@@ -5,5 +5,5 @@ services:
       dockerfile: html/Dockerfile # Pointing to the Dockerfile inside the 'website' directory
     container_name: my_portfolio_Engl
     ports:
-      - "3001:80"
+      - "3002:80"
     restart: always
