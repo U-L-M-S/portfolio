@@ -205,28 +205,29 @@ span{
         border-left: 2px solid var(--main-color);
     }
 }
-@keyframes words{
+@keyframes words {
     0%,
-    20%{
-        content: "Anwendungsentwicklung";
+    20% {
+        content: "Application Development";
     }
     21%,
-    40%{
-        content: "IT-Sicherheit";
+    40% {
+        content: "IT Security";
     }
     41%,
-    60%{
+    60% {
         content: "Backend";
     }
     61%,
-    80%{
-        content: "Netzwerk";
+    80% {
+        content: "Network";
     }
     81%,
-    100%{
+    100% {
         content: "I use Arch, btw";
     }
 }
+
 @keyframes typing{
     10%,
     15%,
