@@ -1,9 +1,9 @@
 services:
   portfolio:
     build:
-      context: . # Context should be the root of the project
-      dockerfile: html/Dockerfile # Pointing to the Dockerfile inside the 'website' directory
-    container_name: my_portfolio_Germ
+      context: ./html # Context is the html directory
+      dockerfile: Dockerfile
+    container_name: my_portfolio
     ports:
-      - "3000:80"
+      - "3001:80"
     restart: always
