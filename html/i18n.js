@@ -8,6 +8,8 @@ const translations = {
       contact: "Kontakt"
     },
     home: {
+      greeting: "Hallo Welt!",
+      name: "Levi",
       title: "hier",
       cv: "Lebenslauf",
       contact: "Kontakt"
@@ -51,6 +53,8 @@ const translations = {
       contact: "Contact"
     },
     home: {
+      greeting: "Hello World!",
+      name: "Levi",
       title: "here",
       cv: "CV",
       contact: "Contact"
@@ -127,7 +131,10 @@ function applyTranslations(lang) {
   document.querySelector('nav a[href="#contact"]').textContent = t.nav.contact;
 
   // Home section
-  document.querySelector('.home-content h1 .greeting').textContent = t.home.title;
+  const h1Element = document.querySelector('.home-content h1');
+  if (h1Element) {
+    h1Element.innerHTML = t.home.greeting + ' <br /><span>' + t.home.name + '</span> <span class="greeting">' + t.home.title + '</span>';
+  }
   document.querySelector('.btn-group a[href="Lebenslauf.pdf"]').textContent = t.home.cv;
   document.querySelector('.btn-group a[href="#contact"]').textContent = t.home.contact;
 
