@@ -127,7 +127,7 @@ function applyTranslations(lang) {
   document.querySelector('nav a[href="#contact"]').textContent = t.nav.contact;
 
   // Home section
-  document.querySelector('.home-content h1 span').textContent = t.home.title; // This will set "hier" (DE) or "here" (EN)
+  document.querySelector('.home-content h1 .greeting').textContent = t.home.title;
   document.querySelector('.btn-group a[href="Lebenslauf.pdf"]').textContent = t.home.cv;
   document.querySelector('.btn-group a[href="#contact"]').textContent = t.home.contact;
 
