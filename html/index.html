@@ -6,7 +6,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="Content-Security-Policy" content="
         default-src 'self'; 
-        script-src 'self' https://cdnjs.cloudflare.com; 
+        script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; 
         style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://unpkg.com; 
         font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://unpkg.com; 
         img-src 'self' data:;" />
@@ -23,7 +23,6 @@
   <link rel="icon" href="/cv-youtube-tutorial/user-regular.svg" type="image/icon type" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link rel="stylesheet" href="style.css" />
-  <script src="button-move.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -34,6 +33,7 @@
 <body>
   <header class="header">
     <a href="#home" class="logo">U. Levi <span>M. Seebacher</span></a>
+    <i id="menu-icon" class="bx bx-menu"></i>
     <nav class="navbar">
       <a href="#home" class="active">Startseite</a>
       <a href="#education">Bildung</a>
