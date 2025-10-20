@@ -11,6 +11,7 @@ const translations = {
       greeting: "Hallo Welt!",
       name: "Levi",
       title: "hier",
+      description: "Coding ist die Magie, die die digitale Welt antreibt, aber IT-Sicherheit ist der Schild, der sie schützt.<br />Ohne Sicherheit kann die Magie nicht sicher genossen werden.",
       cv: "Lebenslauf",
       contact: "Kontakt"
     },
@@ -41,8 +42,12 @@ const translations = {
       lname: "Nachname",
       email: "Ihre E-Mail",
       tel: "Telefonnummer",
-      subject: "Subject",
-      send: "Send Message"
+      subject: "Betreff",
+      message: "Nachricht",
+      send: "Nachricht senden"
+    },
+    footer: {
+      copyright: "© Uinclis Levi Martins Seebacher | Alle Rechte vorbehalten"
     }
   },
   en: {
@@ -56,6 +61,7 @@ const translations = {
       greeting: "Hello World!",
       name: "Levi",
       title: "here",
+      description: "Coding is the magic that powers the digital world, but IT security is the shield that protects it.<br />Without security, the magic can't be safely enjoyed.",
       cv: "CV",
       contact: "Contact"
     },
@@ -87,7 +93,11 @@ const translations = {
       email: "Your Email",
       tel: "Phone Number",
       subject: "Subject",
+      message: "Message",
       send: "Send Message"
+    },
+    footer: {
+      copyright: "© Uinclis Levi Martins Seebacher | All rights Reserved"
     }
   }
 };
@@ -131,10 +141,9 @@ function applyTranslations(lang) {
   document.querySelector('nav a[href="#contact"]').textContent = t.nav.contact;
 
   // Home section
-  const h1Element = document.querySelector('.home-content h1');
-  if (h1Element) {
-    h1Element.innerHTML = t.home.greeting + ' <br /><span>' + t.home.name + '</span> <span class="greeting">' + t.home.title + '</span>';
-  }
+  document.querySelector('.home-content h1 .greeting-text').textContent = t.home.greeting;
+  document.querySelector('.home-content h1 .greeting').textContent = t.home.title;
+  document.querySelector('.home-content > p').innerHTML = t.home.description;
   document.querySelector('.btn-group a[href="Lebenslauf.pdf"]').textContent = t.home.cv;
   document.querySelector('.btn-group a[href="#contact"]').textContent = t.home.contact;
 
@@ -183,7 +192,11 @@ function applyTranslations(lang) {
   document.querySelector('input[name="email"]').placeholder = t.contact.email;
   document.querySelector('input[name="tel"]').placeholder = t.contact.tel;
   document.querySelector('input[name="subject"]').placeholder = t.contact.subject;
+  document.querySelector('textarea[name="msg"]').placeholder = t.contact.message;
   document.querySelector('input[type="submit"]').value = t.contact.send;
+
+  // Footer
+  document.querySelector('.footer .copyright').textContent = t.footer.copyright;
 
   // Save preference
   localStorage.setItem('preferredLanguage', lang);
