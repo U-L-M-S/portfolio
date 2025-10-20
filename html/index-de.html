@@ -28,24 +28,6 @@
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <script>
-    // Redirect based on domain
-    (function() {
-      const hostname = window.location.hostname;
-
-      // If already on the correct page, don't redirect
-      if (window.location.pathname.includes('index-de.html') || window.location.pathname.includes('index-en.html')) {
-        return;
-      }
-
-      // Check domain and redirect
-      if (hostname.endsWith('.de')) {
-        window.location.replace('/index-de.html');
-      } else {
-        window.location.replace('/index-en.html');
-      }
-    })();
-  </script>
 </head>
 
 <body>
@@ -62,14 +44,13 @@
   <section class="home" id="home">
     <div class="home-content">
       <h1>
-        <span class="greeting-text">Hello World!</span> <br />
-        <span>Levi</span> <span class="greeting">hier</span>
+        Hallo Welt! <br />
+        <span>Levi</span> hier
       </h1>
       <h3 class="text-animation">><span></span></h3>
       <p>
-        Coding is the magic that powers the digital world, but IT security is
-        the shield that protects it.<br />Without security, the magic can't be
-        safely enjoyed.
+        Coding ist die Magie, die die digitale Welt antreibt, aber IT-Sicherheit ist
+        der Schild, der sie schützt.<br />Ohne Sicherheit kann die Magie nicht sicher genossen werden.
       </p>
 
       <div class="social-icons">
@@ -214,21 +195,20 @@
         </div>
       </div>
       <div class="input-group-2">
-        <input type="text" name="subject" id="subject" placeholder="Subject" required />
+        <input type="text" name="subject" id="subject" placeholder="Betreff" required />
 
-        <textarea name="msg" id="msg" cols="30" rows="5" required></textarea>
-        <input type="submit" value="Send Message" class="btn" />
+        <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Nachricht" required></textarea>
+        <input type="submit" value="Nachricht senden" class="btn" />
       </div>
     </form>
   </section>
 
   <footer class="footer">
     <p class="copyright">
-      © Uinclis Levi Martins Seebacher | All rights Reserved
+      © Uinclis Levi Martins Seebacher | Alle Rechte vorbehalten
     </p>
   </footer>
 
-  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 

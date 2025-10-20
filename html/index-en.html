@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 
 <head>
   <meta name="google-site-verification" content="l_a6RRSRuA8iKxArzLmmTRwlHGovtKUPmXPZ7A7GlJ4" />
@@ -28,24 +28,6 @@
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <script>
-    // Redirect based on domain
-    (function() {
-      const hostname = window.location.hostname;
-
-      // If already on the correct page, don't redirect
-      if (window.location.pathname.includes('index-de.html') || window.location.pathname.includes('index-en.html')) {
-        return;
-      }
-
-      // Check domain and redirect
-      if (hostname.endsWith('.de')) {
-        window.location.replace('/index-de.html');
-      } else {
-        window.location.replace('/index-en.html');
-      }
-    })();
-  </script>
 </head>
 
 <body>
@@ -53,17 +35,17 @@
     <a href="#home" class="logo">U. Levi <span>M. Seebacher</span></a>
     <i id="menu-icon" class="bx bx-menu"></i>
     <nav class="navbar">
-      <a href="#home" class="active">Startseite</a>
-      <a href="#education">Bildung</a>
-      <a href="#projects">Projekte</a>
-      <a href="#contact">Kontakt</a>
+      <a href="#home" class="active">Home</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
   <section class="home" id="home">
     <div class="home-content">
       <h1>
-        <span class="greeting-text">Hello World!</span> <br />
-        <span>Levi</span> <span class="greeting">hier</span>
+        Hello World! <br />
+        <span>Levi</span> here
       </h1>
       <h3 class="text-animation">><span></span></h3>
       <p>
@@ -81,8 +63,8 @@
       </div>
 
       <div class="btn-group">
-        <a href="Lebenslauf.pdf" download="Lebenslauf.pdf" class="btn">Lebenslauf</a>
-        <a href="#contact" class="btn">Kontakt</a>
+        <a href="Lebenslauf.pdf" download="Lebenslauf.pdf" class="btn">CV</a>
+        <a href="#contact" class="btn">Contact</a>
       </div>
     </div>
 
@@ -92,15 +74,15 @@
   </section>
 
   <section class="education" id="education">
-    <h2 class="heading">Bildung</h2>
+    <h2 class="heading">Education</h2>
 
     <div class="timeline-items">
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">Jetzt</div>
+        <div class="timeline-date">Now</div>
         <div class="timeline-content">
-          <h3>Umschulung - GFN Freiburg</h3>
-          <p>Fachinformatiker Anwendungsentwicklung</p>
+          <h3>Retraining - GFN Freiburg</h3>
+          <p>IT Specialist in Application Development</p>
         </div>
       </div>
 
@@ -119,8 +101,8 @@
         <div class="timeline-dot"></div>
         <div class="timeline-date">2022</div>
         <div class="timeline-content">
-          <h3>Studium - HS-Offenburg</h3>
-          <p>Unternehmens und IT-Sicherheit</p>
+          <h3>Studies - HS-Offenburg</h3>
+          <p>Corporate and IT Security</p>
         </div>
       </div>
 
@@ -128,15 +110,15 @@
         <div class="timeline-dot"></div>
         <div class="timeline-date">2019</div>
         <div class="timeline-content">
-          <h3>Berufskolleg II - BSZ Waldkirch</h3>
-          <p>Fachhochschule Wirtschaftsinformatik</p>
+          <h3>Vocational College II - BSZ Waldkirch</h3>
+          <p>University of Applied Sciences in Business Informatics</p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="projects" id="projects">
-    <h2 class="heading">Projekte</h2>
+    <h2 class="heading">Projects</h2>
 
     <div class="projects-container">
       <div class="project-box">
@@ -145,11 +127,9 @@
             <h4>Password Management System</h4>
           </a>
           <p>
-            Dies war ein Python-Projekt, das die Generierung von Passwörtern
-            visualisiert und überprüft, ob die aktuellen Passwörter bereits im
-            Internet durch
+            This was a Python project that visualizes password generation and checks if current passwords have already been leaked on the internet through
             <a href="https://haveibeenpwned.com/" target="_blank"> HIBP</a>
-            geleakt wurden, indem es Hashing verwendet.
+            by using hashing.
           </p>
         </div>
       </div>
@@ -160,10 +140,8 @@
             <h4>Mika Linux</h4>
           </a>
           <p>
-            Mika Linux ist eine benutzerfreundliche Linux-Distribution, die
-            von meinem Team und mir als Hobby entwickelt wurde.<br />
-            Sie basiert auf Arch Linux und richtet sich speziell an Nutzer mit
-            wenig technischem 'Know-how'.
+            Mika Linux is a user-friendly Linux distribution developed by my team and me as a hobby.<br />
+            It is based on Arch Linux and is specifically aimed at users with little technical know-how.
           </p>
         </div>
       </div>
@@ -174,13 +152,11 @@
             <h4>Levi Kurzfassung</h4>
           </a>
           <p>
-            Zusammenfassungen von jedem Lernfeld der GFN-Freiburg, die von mir
-            selbst mit Hilfe von
-            <a href="https://obsidian.md/" target="_blank"> Obsidian </a> und
+            Summaries of each learning field from GFN-Freiburg, created by myself with the help of
+            <a href="https://obsidian.md/" target="_blank"> Obsidian </a> and
             <a href="https://dg-docs.ole.dev/" target="_blank">
               Digital Garden
-            </a>
-            erstellt wurden.
+            </a>.
           </p>
         </div>
       </div>
@@ -191,8 +167,7 @@
             <h4>Amanda</h4>
           </a>
           <p>
-            Ein weiteres IT-Sicherheitsprojekt konzentriert sich auf die
-            Entwicklung eines Keyloggers in C++.
+            Another IT security project focusing on developing a keylogger in C++.
           </p>
         </div>
       </div>
@@ -200,23 +175,23 @@
   </section>
 
   <section class="contact" id="contact">
-    <h3 class="heading">Kontakt</h3>
+    <h3 class="heading">Contact</h3>
 
     <form action="https://formspree.io/f/mnqeyzwn" method="POST">
       <div class="input-group">
         <div class="input-box">
-          <input type="text" name="fname" id="fname" placeholder="Vorname" required />
-          <input type="text" name="lname" id="lname" placeholder="Nachname" required />
-          <input type="email" name="email" id="email" placeholder="Ihre E-Mail" required />
+          <input type="text" name="fname" id="fname" placeholder="First Name" required />
+          <input type="text" name="lname" id="lname" placeholder="Last Name" required />
+          <input type="email" name="email" id="email" placeholder="Your Email" required />
         </div>
         <div class="input-box">
-          <input type="tel" name="tel" id="tel" placeholder="Telefonnummer" />
+          <input type="tel" name="tel" id="tel" placeholder="Phone Number" />
         </div>
       </div>
       <div class="input-group-2">
         <input type="text" name="subject" id="subject" placeholder="Subject" required />
 
-        <textarea name="msg" id="msg" cols="30" rows="5" required></textarea>
+        <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Message" required></textarea>
         <input type="submit" value="Send Message" class="btn" />
       </div>
     </form>
@@ -228,7 +203,6 @@
     </p>
   </footer>
 
-  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 
