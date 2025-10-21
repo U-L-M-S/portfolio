@@ -389,7 +389,7 @@ span {
   font-size: 1.6rem;
   font-weight: 600;
   max-height: 100px;
-  line-height: 1, 7;
+  line-height: 1.7;
   margin: auto;
 }
 .contact {
@@ -518,10 +518,9 @@ span {
     font-size: 2.6rem;
   }
   .home-content h1 {
-    font-size: 7rem;
-    white-space: nowrap; /* Prevent text from wrapping */
-    display: inline-block; /* Keep the h1 content in one line */
+    font-size: 5rem;
     margin-top: 3rem;
+    line-height: 1.2;
   }
   .home-content p {
     max-width: 600px;
@@ -556,32 +555,37 @@ span {
   }
 
   .project-box {
-    border-radius: 1.5rem; /* Reduced border radius for a more subtle effect */
-    transition: 0.3s ease-in-out; /* Slightly adjusted transition duration */
-    overflow: hidden; /* Ensures content doesn't overflow */
+    border-radius: 2rem;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto; /* Let the height be determined by content */
-    padding: 2rem; /* Added padding for better spacing */
+    height: auto;
+    min-height: 200px;
   }
 
-  .project-info {
-    text-align: center; /* Center align text */
-    max-width: 100%; /* Ensure content fits within the container */
-    overflow-wrap: break-word; /* Handle long words or content */
-    word-wrap: break-word; /* For older browser compatibility */
+  .project-box .project-info {
+    text-align: center;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding: 3rem 2rem;
   }
 
   .project-info h4 {
-    font-size: 2.4rem; /* Reduced font size for better scaling */
-    font-weight: 700; /* Adjusted font weight */
-    line-height: 1.4; /* Adjusted line height */
-    margin-bottom: 1rem; /* Added margin below the heading */
-    text-align: center; /* Center align the heading */
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0;
   }
 
   .project-info p {
-    display: none; /* Hide paragraph text on smaller screens to avoid overflow */
+    display: none;
+  }
+
+  .project-info a {
+    text-decoration: none;
+    color: inherit;
   }
 }
