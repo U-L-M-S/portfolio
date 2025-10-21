@@ -17,24 +17,24 @@ const translations = {
     },
     education: {
       heading: "Bildung",
-      now: "Jetzt",
+      now: "Aktuell",
       retraining: "Umschulung - GFN Freiburg",
       retrainingDesc: "Fachinformatiker Anwendungsentwicklung",
       studies: "Studium - HS-Offenburg",
-      studiesDesc: "Unternehmens und IT-Sicherheit",
+      studiesDesc: "Unternehmens- und IT-Sicherheit",
       vocational: "Berufskolleg II - BSZ Waldkirch",
-      vocationalDesc: "Fachhochschule Wirtschaftsinformatik"
+      vocationalDesc: "Fachhochschulreife Wirtschaftsinformatik"
     },
     projects: {
       heading: "Projekte",
-      pms: "Dies war ein Python-Projekt, das die Generierung von Passwörtern visualisiert und überprüft, ob die aktuellen Passwörter bereits im Internet durch",
+      pms: "Dies ist ein Python-Projekt, das die Generierung von Passwörtern visualisiert und überprüft, ob die aktuellen Passwörter bereits im Internet durch",
       pms2: "geleakt wurden, indem es Hashing verwendet.",
-      mika: "Mika Linux ist eine benutzerfreundliche Linux-Distribution, die von meinem Team und mir als Hobby entwickelt wurde.",
-      mika2: "Sie basiert auf Arch Linux und richtet sich speziell an Nutzer mit wenig technischem 'Know-how'.",
+      mika: "Mika Linux ist eine benutzerfreundliche Linux-Distribution, die von meinem Team und mir als Hobbyprojekt entwickelt wurde.",
+      mika2: "Sie basiert auf Arch Linux und richtet sich speziell an Nutzer mit wenig technischem Know-how.",
       gfn: "Zusammenfassungen von jedem Lernfeld der GFN-Freiburg, die von mir selbst mit Hilfe von",
       gfn2: "und",
       gfn3: "erstellt wurden.",
-      amanda: "Ein weiteres IT-Sicherheitsprojekt konzentriert sich auf die Entwicklung eines Keyloggers in C++."
+      amanda: "Ein weiteres IT-Sicherheitsprojekt, das sich auf die Entwicklung eines Keyloggers in C++ konzentriert."
     },
     contact: {
       heading: "Kontakt",
@@ -62,29 +62,29 @@ const translations = {
       name: "Levi",
       title: "here",
       description: "Coding is the magic that powers the digital world, but IT security is the shield that protects it.<br />Without security, the magic can't be safely enjoyed.",
-      cv: "CV",
+      cv: "Resume",
       contact: "Contact"
     },
     education: {
       heading: "Education",
-      now: "Now",
+      now: "Current",
       retraining: "Retraining - GFN Freiburg",
       retrainingDesc: "IT Specialist in Application Development",
       studies: "Studies - HS-Offenburg",
       studiesDesc: "Corporate and IT Security",
       vocational: "Vocational College II - BSZ Waldkirch",
-      vocationalDesc: "University of Applied Sciences in Business Informatics"
+      vocationalDesc: "University Entrance Qualification in Business Informatics"
     },
     projects: {
       heading: "Projects",
-      pms: "This was a Python project that visualizes password generation and checks if current passwords have already been leaked on the internet through",
-      pms2: "by using hashing.",
-      mika: "Mika Linux is a user-friendly Linux distribution developed by my team and me as a hobby.",
-      mika2: "It is based on Arch Linux and is specifically aimed at users with little technical know-how.",
-      gfn: "Summaries of each learning field from GFN-Freiburg, created by myself with the help of",
+      pms: "This is a Python project that visualizes password generation and checks whether current passwords have already been leaked on the internet through",
+      pms2: "using hashing techniques.",
+      mika: "Mika Linux is a user-friendly Linux distribution developed by my team and me as a hobby project.",
+      mika2: "It is based on Arch Linux and is specifically designed for users with little technical know-how.",
+      gfn: "Summaries of each learning module from GFN-Freiburg, created by me using",
       gfn2: "and",
       gfn3: ".",
-      amanda: "Another IT security project focusing on developing a keylogger in C++."
+      amanda: "Another IT security project focused on developing a keylogger in C++."
     },
     contact: {
       heading: "Contact",
