@@ -184,6 +184,9 @@ span {
 .text-animation span {
   position: relative;
 }
+.honeypot {
+  display: none;
+}
 .text-animation span::before {
   content: "Web Developer";
   color: var(--main-color);
