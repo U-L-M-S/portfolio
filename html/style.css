@@ -204,6 +204,12 @@ body {
 .navbar a.active::after {
   width: 100%;
 }
+.navbar:hover a.active:not(:hover) {
+  color: var(--muted-color);
+}
+.navbar:hover a.active:not(:hover)::after {
+  width: 0;
+}
 
 #menu-icon {
   font-size: 3rem;
@@ -346,16 +352,19 @@ section {
   color: var(--main-color);
   margin-right: 0.6rem;
 }
-.text-animation span {
+.text-animation span:not(.prompt) {
   position: relative;
   color: var(--text-color);
 }
-.text-animation span::before {
+.text-animation span:not(.prompt)::before {
   content: "Web Developer";
   color: var(--main-color);
-  animation: words 20s infinite;
+  animation: words-de 20s infinite;
 }
-.text-animation span::after {
+:root:lang(en) .text-animation span:not(.prompt)::before {
+  animation-name: words-en;
+}
+.text-animation span:not(.prompt)::after {
   content: "";
   background-color: var(--bg-color);
   position: absolute;
@@ -368,11 +377,18 @@ section {
 @keyframes cursor {
   to { border-left: 2px solid transparent; }
 }
-@keyframes words {
+@keyframes words-de {
   0%, 20% { content: "Anwendungsentwicklung"; }
   21%, 40% { content: "IT-Sicherheit"; }
   41%, 60% { content: "Backend"; }
   61%, 80% { content: "Netzwerk"; }
+  81%, 100% { content: "I use Arch, btw"; }
+}
+@keyframes words-en {
+  0%, 20% { content: "Software Development"; }
+  21%, 40% { content: "IT Security"; }
+  41%, 60% { content: "Backend"; }
+  61%, 80% { content: "Networking"; }
   81%, 100% { content: "I use Arch, btw"; }
 }
 @keyframes typing {
