@@ -12,17 +12,28 @@
   <link rel="manifest" href="/site.webmanifest" />
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#050507" />
   <title>Levi Seebacher</title>
   <link rel="icon" href="/cv-youtube-tutorial/user-regular.svg" type="image/icon type" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet" crossorigin="anonymous" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"
     integrity="sha384-42kyIPf7HDYLkGffmxDhSx/3Z/53wGBs3nD6wEFxsbeDc7rMO6mkYbkAcpRsnMU2" crossorigin="anonymous" />
 </head>
 
 <body>
+  <!-- Animated background -->
+  <div class="bg-fx" aria-hidden="true">
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-scanline"></div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
   <header class="header">
     <a href="#home" class="logo">U. Levi <span>M. Seebacher</span></a>
     <i id="menu-icon" class="bx bx-menu"></i>
@@ -33,35 +44,40 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
+
   <section class="home" id="home">
     <div class="home-content">
+      <span class="home-tag"><span class="pulse-dot"></span>Available for projects</span>
       <h1>
         Hello World! <br />
-        <span>Levi</span> here
+        <span class="accent">Levi</span> here
       </h1>
-      <h3 class="text-animation">><span></span></h3>
+      <h3 class="text-animation"><span class="prompt">&gt;</span><span></span></h3>
       <p>
-        Coding is the magic that powers the digital world, but IT security is
-        the shield that protects it.<br />Without security, the magic can't be
-        safely enjoyed.
+        Coding is the magic that powers the digital world — IT security is
+        the shield that protects it.<br />Without security, the magic can't be safely enjoyed.
       </p>
 
       <div class="social-icons">
-        <a href="https://www.linkedin.com/in/u-levi-m-seebacher-54b089254/" target="_blank" rel="noopener noreferrer"><i
-            class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/U-L-M-S" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
-        <a href="https://tryhackme.com/p/TorvaMessor" target="_blank" rel="noopener noreferrer"><i class="bx bx-injection"></i></a>
-        <a href="https://leetcode.com/u/U-L-M-S/" target="_blank" rel="noopener noreferrer"><i class="bx bx-terminal"></i></a>
+        <a href="https://www.linkedin.com/in/u-levi-m-seebacher-54b089254/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/U-L-M-S" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+        <a href="https://tryhackme.com/p/TorvaMessor" target="_blank" rel="noopener noreferrer" aria-label="TryHackMe"><i class="bx bx-injection"></i></a>
+        <a href="https://leetcode.com/u/U-L-M-S/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i class="bx bx-terminal"></i></a>
       </div>
 
       <div class="btn-group">
-        <a href="Lebenslauf.pdf" download="Lebenslauf.pdf" class="btn">CV</a>
-        <a href="#contact" class="btn">Contact</a>
+        <span class="magnet"><a href="Lebenslauf.pdf" download="Lebenslauf.pdf" class="btn"><i class="bx bx-download"></i>CV</a></span>
+        <span class="magnet"><a href="#contact" class="btn btn-ghost"><i class="bx bx-message-rounded-dots"></i>Contact</a></span>
       </div>
     </div>
 
     <div class="home-img">
-      <img src="/pictures/me.png" />
+      <div class="img-frame">
+        <img src="/pictures/me.png" alt="Levi Seebacher" />
+      </div>
+      <span class="float-chip chip-1"><i class="bx bx-code-alt"></i>Application Dev</span>
+      <span class="float-chip chip-2"><i class="bx bx-shield-quarter"></i>IT Security</span>
+      <span class="float-chip chip-3"><i class="bx bxl-tux"></i>Arch Linux</span>
     </div>
   </section>
 
@@ -71,38 +87,27 @@
     <div class="timeline-items">
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">Current</div>
         <div class="timeline-content">
-          <h3>Retraining - GFN Freiburg</h3>
+          <span class="timeline-date">Current</span>
+          <h3>Retraining — GFN Freiburg</h3>
           <p>IT Specialist in Application Development</p>
         </div>
       </div>
 
-      <!-- <div class="timeline-item"> -->
-      <!--   <div class="timeline-dot"></div> -->
-      <!--   <div class="timeline-date">2023</div> -->
-      <!--   <div class="timeline-content"> -->
-      <!--     <h3>Ausbildung - Collax GmbH</h3> -->
-      <!--     <p>Fachinformatiker Anwendungsentwicklung</p> -->
-      <!--   </div> -->
-      <!-- </div> -->
-
-
-
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">2022</div>
         <div class="timeline-content">
-          <h3>Studies - HS-Offenburg</h3>
+          <span class="timeline-date">2022</span>
+          <h3>Studies — HS-Offenburg</h3>
           <p>Corporate and IT Security</p>
         </div>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">2019</div>
         <div class="timeline-content">
-          <h3>Vocational College II - BSZ Waldkirch</h3>
+          <span class="timeline-date">2019</span>
+          <h3>Vocational College II — BSZ Waldkirch</h3>
           <p>University Entrance Qualification in Business Informatics</p>
         </div>
       </div>
@@ -113,56 +118,73 @@
     <h2 class="heading">Projects</h2>
 
     <div class="projects-container">
-      <div class="project-box">
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-key"></i></div>
         <div class="project-info">
-          <a href="https://github.com/U-L-M-S/pms" target="_blank" rel="noopener noreferrer" style="margin-left: -25px">
+          <a href="https://github.com/U-L-M-S/pms" target="_blank" rel="noopener noreferrer">
             <h4>Password Management System</h4>
           </a>
           <p>
-            This is a Python project that visualizes password generation and checks whether current passwords have already been leaked on the internet through
-            <a href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer"> HIBP</a>
-            using hashing techniques.
+            A Python project that visualizes password generation and checks whether
+            current passwords have been leaked online via
+            <a href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer">HIBP</a>
+            using hashing.
           </p>
         </div>
-      </div>
+        <div class="project-tags">
+          <span>Python</span><span>SHA-1</span><span>HIBP API</span>
+        </div>
+      </article>
 
-      <div class="project-box">
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bxl-tux"></i></div>
         <div class="project-info">
           <a href="https://mika-linux.com/" target="_blank" rel="noopener noreferrer">
             <h4>Mika Linux</h4>
           </a>
           <p>
-            Mika Linux is a user-friendly Linux distribution developed by my team and me as a hobby project.<br />
-            It is based on Arch Linux and is specifically designed for users with little technical know-how.
+            A user-friendly Linux distribution developed by my team and me as a hobby project.
+            Based on Arch Linux and designed for users with little technical know-how.
           </p>
         </div>
-      </div>
+        <div class="project-tags">
+          <span>Arch Linux</span><span>Bash</span><span>Calamares</span>
+        </div>
+      </article>
 
-      <div class="project-box">
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-book-content"></i></div>
         <div class="project-info">
           <a href="https://gfn.uinclis.de" target="_blank" rel="noopener noreferrer">
             <h4>Levi Kurzfassung</h4>
           </a>
           <p>
-            Summaries of each learning module from GFN-Freiburg, created by me using
-            <a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer"> Obsidian </a> and
-            <a href="https://dg-docs.ole.dev/" target="_blank" rel="noopener noreferrer">
-              Digital Garden
-            </a>.
+            Summaries of each learning module from GFN-Freiburg, created with
+            <a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer">Obsidian</a>
+            and
+            <a href="https://dg-docs.ole.dev/" target="_blank" rel="noopener noreferrer">Digital Garden</a>.
           </p>
         </div>
-      </div>
+        <div class="project-tags">
+          <span>Obsidian</span><span>Markdown</span><span>Digital Garden</span>
+        </div>
+      </article>
 
-      <div class="project-box">
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-bug"></i></div>
         <div class="project-info">
           <a href="https://github.com/U-L-M-S/amanda" target="_blank" rel="noopener noreferrer">
             <h4>Amanda</h4>
           </a>
           <p>
-            Another IT security project focused on developing a keylogger in C++.
+            An IT-security project focused on developing a keylogger in C++ — for
+            learning and analysis purposes.
           </p>
         </div>
-      </div>
+        <div class="project-tags">
+          <span>C++</span><span>Win32 API</span><span>Security</span>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -170,33 +192,32 @@
     <h2 class="heading">Contact</h2>
 
     <form action="https://formspree.io/f/mnqeyzwn" method="POST">
-      <!-- Honeypot field for spam protection (hidden from users) -->
       <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" />
       <div class="input-group">
         <div class="input-box">
           <input type="text" name="fname" id="fname" placeholder="First Name" required />
-          <input type="text" name="lname" id="lname" placeholder="Last Name" required />
           <input type="email" name="email" id="email" placeholder="Your Email" required />
         </div>
         <div class="input-box">
+          <input type="text" name="lname" id="lname" placeholder="Last Name" required />
           <input type="tel" name="tel" id="tel" placeholder="Phone Number" />
         </div>
       </div>
       <div class="input-group-2">
         <input type="text" name="subject" id="subject" placeholder="Subject" required />
-
-        <textarea name="msg" id="msg" cols="30" rows="5" placeholder="Message" required></textarea>
-        <input type="submit" value="Send Message" class="btn" />
+        <textarea name="msg" id="msg" cols="30" rows="6" placeholder="Message" required></textarea>
+        <span class="magnet"><input type="submit" value="Send Message" class="btn" /></span>
       </div>
     </form>
   </section>
 
   <footer class="footer">
     <p class="copyright">
-      © Uinclis Levi Martins Seebacher | All rights Reserved
+      © Uinclis Levi Martins Seebacher — All rights Reserved
     </p>
   </footer>
 
+  <script src="anime.min.js"></script>
   <script src="script.js"></script>
 </body>
 

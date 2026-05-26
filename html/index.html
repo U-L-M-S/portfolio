@@ -12,17 +12,28 @@
   <link rel="manifest" href="/site.webmanifest" />
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#da532c" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="theme-color" content="#050507" />
   <title>Levi Seebacher</title>
   <link rel="icon" href="/cv-youtube-tutorial/user-regular.svg" type="image/icon type" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet" crossorigin="anonymous" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"
     integrity="sha384-42kyIPf7HDYLkGffmxDhSx/3Z/53wGBs3nD6wEFxsbeDc7rMO6mkYbkAcpRsnMU2" crossorigin="anonymous" />
 </head>
 
 <body>
+  <!-- Animated background -->
+  <div class="bg-fx" aria-hidden="true">
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-scanline"></div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
   <header class="header">
     <a href="#home" class="logo">U. Levi <span>M. Seebacher</span></a>
     <i id="menu-icon" class="bx bx-menu"></i>
@@ -33,35 +44,40 @@
       <a href="#contact">Kontakt</a>
     </nav>
   </header>
+
   <section class="home" id="home">
     <div class="home-content">
+      <span class="home-tag"><span class="pulse-dot"></span>Verfügbar für Projekte</span>
       <h1>
-        <span class="greeting-text">Hello World!</span> <br />
-        <span>Levi</span> <span class="greeting">hier</span>
+        Hallo Welt! <br />
+        <span class="accent">Levi</span> hier
       </h1>
-      <h3 class="text-animation">><span></span></h3>
+      <h3 class="text-animation"><span class="prompt">&gt;</span><span></span></h3>
       <p>
-        Coding is the magic that powers the digital world, but IT security is
-        the shield that protects it.<br />Without security, the magic can't be
-        safely enjoyed.
+        Coding ist die Magie, die die digitale Welt antreibt — IT-Sicherheit ist
+        der Schild, der sie schützt.<br />Ohne Sicherheit kann die Magie nicht sicher genossen werden.
       </p>
 
       <div class="social-icons">
-        <a href="https://www.linkedin.com/in/u-levi-m-seebacher-54b089254/" target="_blank" rel="noopener noreferrer"><i
-            class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/U-L-M-S" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
-        <a href="https://tryhackme.com/p/TorvaMessor" target="_blank" rel="noopener noreferrer"><i class="bx bx-injection"></i></a>
-        <a href="https://leetcode.com/u/U-L-M-S/" target="_blank" rel="noopener noreferrer"><i class="bx bx-terminal"></i></a>
+        <a href="https://www.linkedin.com/in/u-levi-m-seebacher-54b089254/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/U-L-M-S" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+        <a href="https://tryhackme.com/p/TorvaMessor" target="_blank" rel="noopener noreferrer" aria-label="TryHackMe"><i class="bx bx-injection"></i></a>
+        <a href="https://leetcode.com/u/U-L-M-S/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i class="bx bx-terminal"></i></a>
       </div>
 
       <div class="btn-group">
-        <a href="Lebenslauf.pdf" download="Lebenslauf.pdf" class="btn">Lebenslauf</a>
-        <a href="#contact" class="btn">Kontakt</a>
+        <span class="magnet"><a href="Lebenslauf.pdf" download="Lebenslauf.pdf" class="btn"><i class="bx bx-download"></i>Lebenslauf</a></span>
+        <span class="magnet"><a href="#contact" class="btn btn-ghost"><i class="bx bx-message-rounded-dots"></i>Kontakt</a></span>
       </div>
     </div>
 
     <div class="home-img">
-      <img src="/pictures/me.png" />
+      <div class="img-frame">
+        <img src="/pictures/me.png" alt="Levi Seebacher" />
+      </div>
+      <span class="float-chip chip-1"><i class="bx bx-code-alt"></i>Anwendungsentwicklung</span>
+      <span class="float-chip chip-2"><i class="bx bx-shield-quarter"></i>IT-Sicherheit</span>
+      <span class="float-chip chip-3"><i class="bx bxl-tux"></i>Arch Linux</span>
     </div>
   </section>
 
@@ -71,39 +87,28 @@
     <div class="timeline-items">
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">Jetzt</div>
         <div class="timeline-content">
-          <h3>Umschulung - GFN Freiburg</h3>
+          <span class="timeline-date">Aktuell</span>
+          <h3>Umschulung — GFN Freiburg</h3>
           <p>Fachinformatiker Anwendungsentwicklung</p>
         </div>
       </div>
 
-      <!-- <div class="timeline-item"> -->
-      <!--   <div class="timeline-dot"></div> -->
-      <!--   <div class="timeline-date">2023</div> -->
-      <!--   <div class="timeline-content"> -->
-      <!--     <h3>Ausbildung - Collax GmbH</h3> -->
-      <!--     <p>Fachinformatiker Anwendungsentwicklung</p> -->
-      <!--   </div> -->
-      <!-- </div> -->
-
-
-
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">2022</div>
         <div class="timeline-content">
-          <h3>Studium - HS-Offenburg</h3>
-          <p>Unternehmens und IT-Sicherheit</p>
+          <span class="timeline-date">2022</span>
+          <h3>Studium — HS-Offenburg</h3>
+          <p>Unternehmens- und IT-Sicherheit</p>
         </div>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">2019</div>
         <div class="timeline-content">
-          <h3>Berufskolleg II - BSZ Waldkirch</h3>
-          <p>Fachhochschule Wirtschaftsinformatik</p>
+          <span class="timeline-date">2019</span>
+          <h3>Berufskolleg II — BSZ Waldkirch</h3>
+          <p>Fachhochschulreife Wirtschaftsinformatik</p>
         </div>
       </div>
     </div>
@@ -113,97 +118,107 @@
     <h2 class="heading">Projekte</h2>
 
     <div class="projects-container">
-      <div class="project-box">
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-key"></i></div>
         <div class="project-info">
-          <a href="https://github.com/U-L-M-S/pms" target="_blank" rel="noopener noreferrer" style="margin-left: -25px">
+          <a href="https://github.com/U-L-M-S/pms" target="_blank" rel="noopener noreferrer">
             <h4>Password Management System</h4>
           </a>
           <p>
-            Dies war ein Python-Projekt, das die Generierung von Passwörtern
-            visualisiert und überprüft, ob die aktuellen Passwörter bereits im
-            Internet durch
-            <a href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer"> HIBP</a>
-            geleakt wurden, indem es Hashing verwendet.
+            Ein Python-Projekt, das die Generierung von Passwörtern visualisiert und prüft,
+            ob aktuelle Passwörter bereits über
+            <a href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer">HIBP</a>
+            geleakt wurden — mittels Hashing.
           </p>
         </div>
-      </div>
+        <div class="project-tags">
+          <span>Python</span><span>SHA-1</span><span>HIBP API</span>
+        </div>
+      </article>
 
-      <div class="project-box">
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bxl-tux"></i></div>
         <div class="project-info">
           <a href="https://mika-linux.com/" target="_blank" rel="noopener noreferrer">
             <h4>Mika Linux</h4>
           </a>
           <p>
-            Mika Linux ist eine benutzerfreundliche Linux-Distribution, die
-            von meinem Team und mir als Hobby entwickelt wurde.<br />
-            Sie basiert auf Arch Linux und richtet sich speziell an Nutzer mit
-            wenig technischem 'Know-how'.
+            Eine benutzerfreundliche Linux-Distribution, die von meinem Team und mir als
+            Hobbyprojekt entwickelt wurde. Basiert auf Arch Linux und richtet sich an Nutzer
+            mit wenig technischem Know-how.
           </p>
         </div>
-      </div>
+        <div class="project-tags">
+          <span>Arch Linux</span><span>Bash</span><span>Calamares</span>
+        </div>
+      </article>
 
-      <div class="project-box">
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-book-content"></i></div>
         <div class="project-info">
           <a href="https://gfn.uinclis.de" target="_blank" rel="noopener noreferrer">
             <h4>Levi Kurzfassung</h4>
           </a>
           <p>
-            Zusammenfassungen von jedem Lernfeld der GFN-Freiburg, die von mir
-            selbst mit Hilfe von
-            <a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer"> Obsidian </a> und
-            <a href="https://dg-docs.ole.dev/" target="_blank" rel="noopener noreferrer">
-              Digital Garden
-            </a>
-            erstellt wurden.
+            Zusammenfassungen jedes Lernfelds der GFN-Freiburg — erstellt mit
+            <a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer">Obsidian</a>
+            und
+            <a href="https://dg-docs.ole.dev/" target="_blank" rel="noopener noreferrer">Digital Garden</a>.
           </p>
         </div>
-      </div>
+        <div class="project-tags">
+          <span>Obsidian</span><span>Markdown</span><span>Digital Garden</span>
+        </div>
+      </article>
 
-      <div class="project-box">
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-bug"></i></div>
         <div class="project-info">
           <a href="https://github.com/U-L-M-S/amanda" target="_blank" rel="noopener noreferrer">
             <h4>Amanda</h4>
           </a>
           <p>
-            Ein weiteres IT-Sicherheitsprojekt konzentriert sich auf die
-            Entwicklung eines Keyloggers in C++.
+            Ein IT-Sicherheitsprojekt mit Fokus auf die Entwicklung eines Keyloggers in C++ —
+            zu Lern- und Analysezwecken.
           </p>
         </div>
-      </div>
+        <div class="project-tags">
+          <span>C++</span><span>Win32 API</span><span>Security</span>
+        </div>
+      </article>
     </div>
   </section>
 
   <section class="contact" id="contact">
-    <h3 class="heading">Kontakt</h3>
+    <h2 class="heading">Kontakt</h2>
 
     <form action="https://formspree.io/f/mnqeyzwn" method="POST">
-      <!-- Honeypot field for spam protection (hidden from users) -->
-      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+      <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" />
       <div class="input-group">
         <div class="input-box">
           <input type="text" name="fname" id="fname" placeholder="Vorname" required />
-          <input type="text" name="lname" id="lname" placeholder="Nachname" required />
           <input type="email" name="email" id="email" placeholder="Ihre E-Mail" required />
         </div>
         <div class="input-box">
+          <input type="text" name="lname" id="lname" placeholder="Nachname" required />
           <input type="tel" name="tel" id="tel" placeholder="Telefonnummer" />
         </div>
       </div>
       <div class="input-group-2">
-        <input type="text" name="subject" id="subject" placeholder="Subject" required />
-
-        <textarea name="msg" id="msg" cols="30" rows="5" required></textarea>
-        <input type="submit" value="Send Message" class="btn" />
+        <input type="text" name="subject" id="subject" placeholder="Betreff" required />
+        <textarea name="msg" id="msg" cols="30" rows="6" placeholder="Nachricht" required></textarea>
+        <span class="magnet"><input type="submit" value="Nachricht senden" class="btn" /></span>
       </div>
     </form>
   </section>
 
   <footer class="footer">
     <p class="copyright">
-      © Uinclis Levi Martins Seebacher | All rights Reserved
+      © Uinclis Levi Martins Seebacher — Alle Rechte vorbehalten
     </p>
   </footer>
 
+  <script src="anime.min.js"></script>
   <script src="script.js"></script>
 </body>
 
