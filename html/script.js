@@ -3,18 +3,21 @@
    anime.js powered, fully self-hosted, CSP-friendly.
    ============================================================ */
 
-// ---------- Domain-based language redirect (preserved) ----------
+// ---------- Domain-based language redirect ----------
+// nginx already serves the matching language per domain; this is the fallback
+// for direct hits on a page whose language doesn't match the domain.
 (function redirectByDomain() {
-  const hostname = window.location.hostname;
   const path = window.location.pathname;
+  // an explicitly requested language page always wins
   if (path.includes("index-de.html") || path.includes("index-en.html")) {
     return;
   }
-  if (hostname.endsWith(".de")) {
-    window.location.replace("/index-de.html");
-  } else {
-    window.location.replace("/index-en.html");
+  const wantsGerman = window.location.hostname.endsWith(".de");
+  const servedLang = document.documentElement.lang;
+  if (servedLang === (wantsGerman ? "de" : "en")) {
+    return;
   }
+  window.location.replace(wantsGerman ? "/index-de.html" : "/index-en.html");
 })();
 
 // ---------- Helpers ----------

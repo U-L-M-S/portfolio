@@ -14,6 +14,8 @@
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#050507" />
   <title>Levi Seebacher</title>
+  <link rel="alternate" hreflang="de" href="https://uinclis.de/" />
+  <link rel="alternate" hreflang="en" href="https://uinclis.com/" />
   <link rel="icon" href="/cv-youtube-tutorial/user-regular.svg" type="image/icon type" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link rel="stylesheet" href="style.css" />
@@ -39,7 +41,7 @@
     <i id="menu-icon" class="bx bx-menu"></i>
     <nav class="navbar">
       <a href="#home" class="active">Home</a>
-      <a href="#education">Education</a>
+      <a href="#education">Career</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -82,15 +84,24 @@
   </section>
 
   <section class="education" id="education">
-    <h2 class="heading">Education</h2>
+    <h2 class="heading">Career</h2>
 
     <div class="timeline-items">
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
           <span class="timeline-date">Current</span>
+          <h3>Software Developer — Muckenhirn Automation GmbH</h3>
+          <p>Java · Spring AI · Docker/Kubernetes</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2026</span>
           <h3>Retraining — GFN Freiburg</h3>
-          <p>IT Specialist in Software Development</p>
+          <p>IT Specialist in Software Development — IHK degree</p>
         </div>
       </div>
 
@@ -170,19 +181,34 @@
         </div>
       </article>
 
+      <!-- TODO: add link once the HermesMCP repo is public -->
       <article class="project-box">
-        <div class="project-icon"><i class="bx bx-bug"></i></div>
+        <div class="project-icon"><i class="bx bx-envelope"></i></div>
         <div class="project-info">
-          <a href="https://github.com/U-L-M-S/amanda" target="_blank" rel="noopener noreferrer">
-            <h4>Amanda</h4>
-          </a>
+          <h4>HermesMCP</h4>
           <p>
-            An IT-security project focused on developing a keylogger in C++ — for
-            learning and analysis purposes.
+            A self-built MCP server (Model Context Protocol) based on FastMCP that securely
+            connects AI assistants to e-mail accounts — self-hosted with Docker behind a
+            reverse proxy.
           </p>
         </div>
         <div class="project-tags">
-          <span>C++</span><span>Win32 API</span><span>Security</span>
+          <span>Python</span><span>FastMCP</span><span>Docker</span>
+        </div>
+      </article>
+
+      <!-- TODO: add link once the infrastructure is publicly documented -->
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-server"></i></div>
+        <div class="project-info">
+          <h4>Self-Hosted Infrastructure</h4>
+          <p>
+            My own Linux VPS running containerized services: Portainer, Nginx Proxy Manager,
+            custom MCP servers and n8n automations — including TLS and reverse proxy.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span>Docker</span><span>Linux</span><span>n8n</span>
         </div>
       </article>
     </div>
