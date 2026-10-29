@@ -9,14 +9,19 @@
   <link rel="apple-touch-icon" sizes="180x180" href="pictures/u-icon32.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="pictures/u-icon32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="pictures/u-icon32.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#050507" />
   <title>Levi Seebacher</title>
+  <meta name="description" content="Levi Seebacher — software developer (IHK-certified, application development) from Freiburg, Germany: Java, C#/.NET, integrations, Docker/Linux, IT security." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Levi Seebacher — Software Developer" />
+  <meta property="og:description" content="Java, C#/.NET, integrations, Docker/Linux, IT security — IHK-certified application developer from Freiburg, Germany." />
+  <meta property="og:url" content="https://uinclis.com/" />
+  <meta property="og:image" content="https://uinclis.com/pictures/me.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary" />
   <link rel="alternate" hreflang="de" href="https://uinclis.de/" />
   <link rel="alternate" hreflang="en" href="https://uinclis.com/" />
-  <link rel="icon" href="/cv-youtube-tutorial/user-regular.svg" type="image/icon type" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap"
@@ -84,7 +89,7 @@
       </div>
       <span class="float-chip chip-1"><i class="bx bx-code-alt"></i>Software Development</span>
       <span class="float-chip chip-2"><i class="bx bx-shield-quarter"></i>IT Security</span>
-      <span class="float-chip chip-3"><i class="bx bxl-tux"></i>Arch Linux</span>
+      <span class="float-chip chip-3"><i class="bx bxl-java"></i>Java &amp; .NET</span>
     </div>
   </section>
 
@@ -95,36 +100,45 @@
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <span class="timeline-date">Current</span>
+          <span class="timeline-date">03/2026 – present</span>
           <h3>Software Developer — Muckenhirn Automation GmbH</h3>
-          <p>Java · PLC/TwinCAT · Industrial Automation</p>
+          <p>Java 17 · WildFly · Beckhoff TwinCAT 3 · Unity 6 / C#</p>
         </div>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <span class="timeline-date">2026</span>
+          <span class="timeline-date">04/2025 – 01/2026</span>
+          <h3>Full-Stack Developer (practical phase of retraining) — Karl Dischinger GmbH</h3>
+          <p>.NET / Blazor · Docker · Azure AD SSO — IHK final project RadCheck</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2024 – 2026</span>
           <h3>Retraining — GFN Freiburg</h3>
-          <p>IT Specialist in Software Development — IHK degree</p>
+          <p>IT Specialist in Application Development (IHK)</p>
         </div>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <span class="timeline-date">2022</span>
-          <h3>Studies — HS-Offenburg</h3>
-          <p>Corporate and IT Security</p>
+          <span class="timeline-date">2019 – 2022</span>
+          <h3>Studies in Enterprise and IT Security — Offenburg University</h3>
+          <p>6 semesters · IT security · networks · software development</p>
         </div>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <span class="timeline-date">2019</span>
-          <h3>Vocational College II — BSZ Waldkirch</h3>
-          <p>University Entrance Qualification in Business Informatics</p>
+          <span class="timeline-date">2013 – 2022</span>
+          <h3>Team Lead Video Encoding — Arriva GmbH</h3>
+          <p>Workflows · quality assurance · team coordination</p>
         </div>
       </div>
     </div>
@@ -135,85 +149,84 @@
 
     <div class="projects-container">
       <article class="project-box">
-        <div class="project-icon"><i class="bx bx-key"></i></div>
+        <div class="project-icon"><i class="bx bx-lock-alt"></i></div>
         <div class="project-info">
-          <a href="https://github.com/U-L-M-S/pms" target="_blank" rel="noopener noreferrer">
-            <h4>Password Management System</h4>
+          <h4>RadCheck — Azure-AD-SSO</h4>
+          <p>
+            Web app for managing wheel-inspection forms at Karl Dischinger: public forms without login, an admin area via Microsoft 365 account (Azure AD, OpenID Connect). IHK final project — implementation graded “very good”.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span>C#</span><span>.NET</span><span>Azure AD</span><span>OpenID Connect</span>
+        </div>
+      </article>
+
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-chip"></i></div>
+        <div class="project-info">
+          <h4>Feasibility Study: Beckhoff RT Linux</h4>
+          <p>
+            The complete machine client stack running on Beckhoff RT Linux instead of Windows: TwinCAT 3.1 runtime, WildFly on Java 21, MariaDB and a JavaFX HMI on one device. Result: technically feasible, open points for a production rollout documented.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span>Linux</span><span>TwinCAT 3</span><span>WildFly</span><span>JavaFX</span>
+        </div>
+      </article>
+
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-game"></i></div>
+        <div class="project-info">
+          <h4>GSG-Game — VR Adventure for Meta Quest</h4>
+          <p>
+            Built for a school in Waldkirch: several floors with puzzles, enemies and portals — VR and desktop mode from one codebase (about 12,000 lines of C#).
+          </p>
+        </div>
+        <div class="project-tags">
+          <span>Unity 6</span><span>C#</span><span>Meta XR / OpenXR</span>
+        </div>
+      </article>
+
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-bot"></i></div>
+        <div class="project-info">
+          <a href="https://github.com/U-L-M-S/MittelstandGPT" target="_blank" rel="noopener noreferrer">
+            <h4>MittelstandGPT — Local RAG Assistant</h4>
           </a>
           <p>
-            A Python project that visualizes password generation and checks whether
-            current passwords have been leaked online via
-            <a href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer">HIBP</a>
-            using hashing.
+            Self-hosted, GDPR-friendly RAG assistant: upload documents and a local LLM (Ollama) answers with sources — vector search with Qdrant, backend built on Spring AI.
           </p>
         </div>
         <div class="project-tags">
-          <span>Python</span><span>SHA-1</span><span>HIBP API</span>
+          <span>Java</span><span>Spring AI</span><span>Ollama</span><span>Qdrant</span>
         </div>
       </article>
 
       <article class="project-box">
-        <div class="project-icon"><i class="bx bxl-tux"></i></div>
+        <div class="project-icon"><i class="bx bx-store"></i></div>
         <div class="project-info">
-          <a href="https://mika-linux.com/" target="_blank" rel="noopener noreferrer">
-            <h4>Mika Linux</h4>
+          <h4>Odoo 19 Websites for Restaurants</h4>
+          <p>
+            Four Odoo 19 websites for restaurant and event businesses — <a href="https://champagnerhutte.de" target="_blank" rel="noopener noreferrer">Champagnerhütte</a>, <a href="https://goldenpalast.com" target="_blank" rel="noopener noreferrer">Golden Palast</a>, <a href="https://keyfsahne.com" target="_blank" rel="noopener noreferrer">KEYF Sahne</a> and <a href="https://keyfgastro.de" target="_blank" rel="noopener noreferrer">Ferdi Kot</a>: Docker Compose stack with PostgreSQL, push-to-deploy via GitHub Actions, Caddy with TLS.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span>Odoo 19</span><span>PostgreSQL</span><span>Docker</span><span>GitHub Actions</span>
+        </div>
+      </article>
+
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bxl-github"></i></div>
+        <div class="project-info">
+          <a href="https://github.com/U-L-M-S" target="_blank" rel="noopener noreferrer">
+            <h4>More on GitHub</h4>
           </a>
           <p>
-            A user-friendly Linux distribution developed by my team and me as a hobby project.
-            Based on Arch Linux and designed for users with little technical know-how.
+            Further projects and code are on my GitHub profile.
           </p>
         </div>
         <div class="project-tags">
-          <span>Arch Linux</span><span>Bash</span><span>Calamares</span>
-        </div>
-      </article>
-
-      <article class="project-box">
-        <div class="project-icon"><i class="bx bx-book-content"></i></div>
-        <div class="project-info">
-          <a href="https://gfn.uinclis.de" target="_blank" rel="noopener noreferrer">
-            <h4>Levi Kurzfassung</h4>
-          </a>
-          <p>
-            Summaries of each learning module from GFN-Freiburg, created with
-            <a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer">Obsidian</a>
-            and
-            <a href="https://dg-docs.ole.dev/" target="_blank" rel="noopener noreferrer">Digital Garden</a>.
-          </p>
-        </div>
-        <div class="project-tags">
-          <span>Obsidian</span><span>Markdown</span><span>Digital Garden</span>
-        </div>
-      </article>
-
-      <!-- TODO: add link once the HermesMCP repo is public -->
-      <article class="project-box">
-        <div class="project-icon"><i class="bx bx-envelope"></i></div>
-        <div class="project-info">
-          <h4>HermesMCP</h4>
-          <p>
-            A self-built MCP server (Model Context Protocol) based on FastMCP that securely
-            connects AI assistants to e-mail accounts — self-hosted with Docker behind a
-            reverse proxy.
-          </p>
-        </div>
-        <div class="project-tags">
-          <span>Python</span><span>FastMCP</span><span>Docker</span>
-        </div>
-      </article>
-
-      <!-- TODO: add link once the infrastructure is publicly documented -->
-      <article class="project-box">
-        <div class="project-icon"><i class="bx bx-server"></i></div>
-        <div class="project-info">
-          <h4>Self-Hosted Infrastructure</h4>
-          <p>
-            My own Linux VPS running containerized services: Portainer, Nginx Proxy Manager,
-            custom MCP servers and n8n automations — including TLS and reverse proxy.
-          </p>
-        </div>
-        <div class="project-tags">
-          <span>Docker</span><span>Linux</span><span>n8n</span>
+          <span>github.com/U-L-M-S</span>
         </div>
       </article>
     </div>
