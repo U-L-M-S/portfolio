@@ -100,27 +100,63 @@
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <span class="timeline-date">Current</span>
+          <span class="timeline-date">03/2026 – present</span>
           <h3>Software Developer — Muckenhirn Automation GmbH</h3>
-          <p>Java · PLC/TwinCAT · Industrial Automation</p>
+          <p>Java 17 · WildFly · MariaDB · Beckhoff TwinCAT 3 · Beckhoff RT Linux · Unity 6 / C#</p>
         </div>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <span class="timeline-date">2026</span>
+          <span class="timeline-date">04/2025 – 01/2026</span>
+          <h3>Full-Stack Developer (practical phase of retraining) — Karl Dischinger GmbH</h3>
+          <p>.NET / Blazor · Docker · CI/CD (Drone) · Azure AD SSO — IHK final project RadCheck</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2024 – 2026</span>
           <h3>Retraining — GFN Freiburg</h3>
-          <p>IT Specialist in Software Development — IHK degree</p>
+          <p>IT Specialist in Application Development (IHK)</p>
         </div>
       </div>
 
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
-          <span class="timeline-date">2022</span>
-          <h3>Studies — HS-Offenburg</h3>
-          <p>Corporate and IT Security</p>
+          <span class="timeline-date">2023</span>
+          <h3>Software Development Internships — Karl Dischinger · Netcontrol · Collax</h3>
+          <p>Docker · ASP.NET / C# · Linux servers (Samba, Apache, Squid) · Perl → Python</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2022 – 2023</span>
+          <h3>PC/Server Assembly — Kiebel GmbH</h3>
+          <p>High-end systems · software rollouts · performance testing</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2019 – 2022</span>
+          <h3>Studies in Enterprise and IT Security — Offenburg University</h3>
+          <p>6 semesters · IT security, networks, software development</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2013 – 2022</span>
+          <h3>Team Lead Video Encoding — Arriva GmbH</h3>
+          <p>Workflows, quality assurance, team coordination · training concepts</p>
         </div>
       </div>
 
@@ -129,7 +165,7 @@
         <div class="timeline-content">
           <span class="timeline-date">2019</span>
           <h3>Vocational College II — BSZ Waldkirch</h3>
-          <p>University Entrance Qualification in Business Informatics</p>
+          <p>Fachhochschulreife (university of applied sciences entrance qualification), Business Informatics</p>
         </div>
       </div>
     </div>
@@ -140,20 +176,128 @@
 
     <div class="projects-container">
       <article class="project-box">
-        <div class="project-icon"><i class="bx bx-key"></i></div>
+        <div class="project-icon"><i class="bx bx-lock-alt"></i></div>
         <div class="project-info">
-          <a href="https://github.com/U-L-M-S/pms" target="_blank" rel="noopener noreferrer">
-            <h4>Password Management System</h4>
-          </a>
+          <h4>RadCheck — Azure-AD-SSO</h4>
           <p>
-            A Python project that visualizes password generation and checks whether
-            current passwords have been leaked online via
-            <a href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer">HIBP</a>
-            using hashing.
+            Web app for managing wheel-inspection forms at Karl Dischinger: public forms without login, an admin area via Microsoft 365 account (Azure AD, OAuth 2.0 / OpenID Connect), deployed on IIS on Windows Server. IHK final project — implementation graded “very good”.
           </p>
         </div>
         <div class="project-tags">
-          <span>Python</span><span>SHA-1</span><span>HIBP API</span>
+          <span>C#</span><span>.NET</span><span>Azure AD</span><span>OpenID Connect</span><span>IIS</span>
+        </div>
+      </article>
+
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-chip"></i></div>
+        <div class="project-info">
+          <h4>Feasibility Study: Beckhoff RT Linux</h4>
+          <p>
+            The complete machine client stack running on Beckhoff RT Linux (Debian with PREEMPT_RT kernel) instead of Windows: TwinCAT 3.1 runtime, WildFly 30 on Java 21, MariaDB 11.8 and a JavaFX HMI in a Wayland kiosk (cage) on one device, auto-start via systemd. Result: technically feasible, open points for a production rollout documented.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span>Linux</span><span>systemd</span><span>TwinCAT 3</span><span>WildFly</span><span>MariaDB</span><span>JavaFX</span>
+        </div>
+      </article>
+
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-game"></i></div>
+        <div class="project-info">
+          <h4>GSG-Game — VR Adventure for Meta Quest</h4>
+          <p>
+            VR adventure for Meta Quest, built for a school in Waldkirch: several floors with puzzles, enemies, portals showing a live view of their destination, and physics-based interaction — VR and desktop mode from one codebase (about 12,000 lines of C#, 80 scripts). Plus a PowerShell playtest harness that drives the built game with simulated input.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span>Unity 6</span><span>C#</span><span>Meta XR / OpenXR</span><span>URP</span><span>PowerShell</span>
+        </div>
+      </article>
+
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-receipt"></i></div>
+        <div class="project-info">
+          <a href="https://github.com/U-L-M-S/Lucia-BSP" target="_blank" rel="noopener noreferrer">
+            <h4>Lucia-BSP — E-Invoicing with ZUGFeRD</h4>
+          </a>
+          <p>
+            E-invoicing with ZUGFeRD / Factur-X in Java: a runnable example that generates a PDF with embedded XML using Mustangproject and PDFBox.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span>Java</span><span>ZUGFeRD</span><span>Mustangproject</span><span>PDFBox</span>
+        </div>
+      </article>
+
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-bot"></i></div>
+        <div class="project-info">
+          <a href="https://github.com/U-L-M-S/MittelstandGPT" target="_blank" rel="noopener noreferrer">
+            <h4>MittelstandGPT — Local RAG Assistant</h4>
+          </a>
+          <p>
+            Self-hosted, GDPR-friendly RAG assistant: upload documents and a local LLM (Ollama) answers with sources — vector search with Qdrant, backend built on Spring AI.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span>Java</span><span>Spring AI</span><span>Ollama</span><span>Qdrant</span><span>Docker</span>
+        </div>
+      </article>
+
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-wallet"></i></div>
+        <div class="project-info">
+          <h4>KontoBlick — Finance Cockpit</h4>
+          <p>
+            Self-hosted finance cockpit based on Firefly III: bank statement import (FinTS, CAMT), three read-only MCP servers and a Claude chat inside the web app.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span>Firefly III</span><span>MCP</span><span>FinTS</span><span>Docker</span>
+        </div>
+      </article>
+
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-store"></i></div>
+        <div class="project-info">
+          <h4>Odoo 19 Websites for Restaurants</h4>
+          <p>
+            Four Odoo 19 websites for restaurant and event businesses — <a href="https://champagnerhutte.de" target="_blank" rel="noopener noreferrer">Champagnerhütte</a>, <a href="https://goldenpalast.com" target="_blank" rel="noopener noreferrer">Golden Palast</a>, <a href="https://keyfsahne.com" target="_blank" rel="noopener noreferrer">KEYF Sahne</a> and <a href="https://keyfgastro.de" target="_blank" rel="noopener noreferrer">Ferdi Kot</a>: Docker Compose stack with PostgreSQL, push-to-deploy via GitHub Actions on self-hosted runners, Caddy with TLS. The owners maintain the content themselves in the website builder.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span>Odoo 19</span><span>PostgreSQL</span><span>Docker</span><span>GitHub Actions</span><span>Caddy</span>
+        </div>
+      </article>
+
+      <!-- TODO: add link once the HermesMCP repo is public -->
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-envelope"></i></div>
+        <div class="project-info">
+          <h4>HermesMCP</h4>
+          <p>
+            A self-built MCP server (Model Context Protocol) based on FastMCP that securely
+            connects AI assistants to e-mail accounts — self-hosted with Docker behind a
+            reverse proxy.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span>Python</span><span>FastMCP</span><span>Docker</span>
+        </div>
+      </article>
+
+      <!-- TODO: add link once the infrastructure is publicly documented -->
+      <article class="project-box">
+        <div class="project-icon"><i class="bx bx-server"></i></div>
+        <div class="project-info">
+          <h4>Self-Hosted Infrastructure</h4>
+          <p>
+            My own Linux VPS running containerized services: Portainer, Nginx Proxy Manager,
+            custom MCP servers and n8n automations — including TLS and reverse proxy.
+          </p>
+        </div>
+        <div class="project-tags">
+          <span>Docker</span><span>Linux</span><span>n8n</span>
         </div>
       </article>
 
@@ -188,37 +332,6 @@
         </div>
         <div class="project-tags">
           <span>Obsidian</span><span>Markdown</span><span>Digital Garden</span>
-        </div>
-      </article>
-
-      <!-- TODO: add link once the HermesMCP repo is public -->
-      <article class="project-box">
-        <div class="project-icon"><i class="bx bx-envelope"></i></div>
-        <div class="project-info">
-          <h4>HermesMCP</h4>
-          <p>
-            A self-built MCP server (Model Context Protocol) based on FastMCP that securely
-            connects AI assistants to e-mail accounts — self-hosted with Docker behind a
-            reverse proxy.
-          </p>
-        </div>
-        <div class="project-tags">
-          <span>Python</span><span>FastMCP</span><span>Docker</span>
-        </div>
-      </article>
-
-      <!-- TODO: add link once the infrastructure is publicly documented -->
-      <article class="project-box">
-        <div class="project-icon"><i class="bx bx-server"></i></div>
-        <div class="project-info">
-          <h4>Self-Hosted Infrastructure</h4>
-          <p>
-            My own Linux VPS running containerized services: Portainer, Nginx Proxy Manager,
-            custom MCP servers and n8n automations — including TLS and reverse proxy.
-          </p>
-        </div>
-        <div class="project-tags">
-          <span>Docker</span><span>Linux</span><span>n8n</span>
         </div>
       </article>
     </div>
