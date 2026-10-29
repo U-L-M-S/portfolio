@@ -359,7 +359,7 @@ section {
 .text-animation span:not(.prompt)::before {
   content: "Web Developer";
   color: var(--main-color);
-  animation: words-de 20s infinite;
+  animation: words-de 24s infinite;
 }
 :root:lang(en) .text-animation span:not(.prompt)::before {
   animation-name: words-en;
@@ -378,18 +378,20 @@ section {
   to { border-left: 2px solid transparent; }
 }
 @keyframes words-de {
-  0%, 20% { content: "Anwendungsentwicklung"; }
-  21%, 40% { content: "IT-Sicherheit"; }
-  41%, 60% { content: "Backend"; }
-  61%, 80% { content: "Netzwerk"; }
-  81%, 100% { content: "I use Arch, btw"; }
+  0%, 16% { content: "Anwendungsentwicklung"; }
+  17%, 33% { content: "Java & .NET"; }
+  34%, 50% { content: "Schnittstellen"; }
+  51%, 66% { content: "IT-Sicherheit"; }
+  67%, 83% { content: "Backend"; }
+  84%, 100% { content: "I use Arch, btw"; }
 }
 @keyframes words-en {
-  0%, 20% { content: "Software Development"; }
-  21%, 40% { content: "IT Security"; }
-  41%, 60% { content: "Backend"; }
-  61%, 80% { content: "Networking"; }
-  81%, 100% { content: "I use Arch, btw"; }
+  0%, 16% { content: "Software Development"; }
+  17%, 33% { content: "Java & .NET"; }
+  34%, 50% { content: "Integrations"; }
+  51%, 66% { content: "IT Security"; }
+  67%, 83% { content: "Backend"; }
+  84%, 100% { content: "I use Arch, btw"; }
 }
 @keyframes typing {
   10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% { width: 0; }
